@@ -8,6 +8,7 @@ ARG CACHE_BUST=1
 
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    make \
     ca-certificates \
     git \
     libssl-dev \
